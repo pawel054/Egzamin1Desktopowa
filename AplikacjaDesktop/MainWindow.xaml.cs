@@ -20,5 +20,15 @@ namespace AplikacjaDesktop
         {
             InitializeComponent();
         }
+
+        private void PreviousButtonClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NextButtonClicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
