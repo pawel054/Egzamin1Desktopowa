@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -61,6 +62,7 @@ namespace AplikacjaDesktop
             AlbumLabel.Content = albumObject.Album;
             songsLabel.Content = albumObject.SongsNumber + " utworów";
             yearLabel.Content = albumObject.Year;
+            downloadLabel.Content = albumObject.DownloadNumber;
         }
 
         private static void LoadDataFromFile(string filePath)
@@ -91,6 +93,13 @@ namespace AplikacjaDesktop
                     albumObjects.Add(album);
                 }
             }
+        }
+
+        private void DownloadClick(object sender, RoutedEventArgs e)
+        {
+            var albumDownloads = albumObjects[currentIndex];
+            albumDownloads.DownloadNumber++;
+            DisplayData(currentIndex);
         }
     }
 }

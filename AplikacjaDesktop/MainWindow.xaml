@@ -26,7 +26,7 @@
         </Button>
         <Grid Grid.Column="1" VerticalAlignment="Center" Margin="20,0,0,0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="0.5*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
@@ -43,8 +43,8 @@
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
-                <Label Content="2134242" Foreground="#61D918" FontSize="20" Margin="0,0,20,0"/>
-                <Button Content="Pobierz" Background="#61D918" FontWeight="Bold" FontSize="20"/>
+                <Label x:Name="downloadLabel" Content="2134242" Foreground="#61D918" FontSize="20" Margin="0,0,20,0"/>
+                <Button Content="Pobierz" Background="#61D918" FontWeight="Bold" FontSize="20" Click="DownloadClick"/>
             </StackPanel>
         </Grid>
     </Grid>
