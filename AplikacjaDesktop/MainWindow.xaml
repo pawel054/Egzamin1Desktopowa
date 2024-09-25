@@ -35,11 +35,11 @@
             </Grid.RowDefinitions>
             <Image Source="Images/obraz.png" Grid.Column="0" Grid.Row="0"/>
             <StackPanel Grid.Column="1" Grid.Row="0" Margin="20,0,0,0">
-                <Label Content="Test" Foreground="White" FontSize="50" />
-                <Label Content="Test" Foreground="White" FontSize="30" FontStyle="Italic"/>
+                <Label x:Name="ArtistLabel" Content="Test" Foreground="White" FontSize="50" />
+                <Label x:Name="AlbumLabel" Content="Test" Foreground="White" FontSize="30" FontStyle="Italic"/>
                 <StackPanel Orientation="Horizontal">
-                    <Label Content="14 utworow" Foreground="#61D918" FontSize="20" Margin="0,0,10,0"/>
-                    <Label Content="2000" Foreground="#61D918" FontSize="20"/>
+                    <Label x:Name="songsLabel" Content="14 utworow" Foreground="#61D918" FontSize="20" Margin="0,0,10,0"/>
+                    <Label x:Name="yearLabel" Content="2000" Foreground="#61D918" FontSize="20"/>
                 </StackPanel>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
